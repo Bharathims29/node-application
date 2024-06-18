@@ -37,7 +37,7 @@ http.createServer(function (req, res) {
 		}); 
 	} 
 	
-}).listen(3001, function () { 
+}).listen(process.env.PORT || 3001, function () { 
 	console.log("SERVER STARTED PORT: 3001"); 
 }); 
 
